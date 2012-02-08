@@ -41,7 +41,8 @@ PRODUCT_PACKAGES += \
     libcyanogen-dsp \
     Pacman \
     screenshot \
-    CMScreenshot
+    CMScreenshot \
+    CMBootanimation
 
 # Extra tools in CyanogenMod
 PRODUCT_PACKAGES += \
@@ -86,8 +87,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 #    vendor/cyanogen/prebuilt/common/etc/init.d/10apps2sd:system/etc/init.d/10apps2sd
 
-PRODUCT_COPY_FILES +=  \
-    vendor/cyanogen/proprietary/RomManager.apk:system/app/RomManager.apk \
+#PRODUCT_COPY_FILES +=  \
+#    vendor/cyanogen/proprietary/RomManager.apk:system/app/RomManager.apk \
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
