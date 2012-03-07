@@ -19,7 +19,7 @@ $(call inherit-product, vendor/cyanogen/products/gsm.mk)
 $(call inherit-product, vendor/cyanogen/products/bcm_fm_radio.mk)
 
 # Include WiMax - currently HTC-spec
-##$(call inherit-product, vendor/cyanogen/products/wimax.mk)
+#$(call inherit-product, vendor/cyanogen/products/wimax.mk)
 
 #
 # Setup device specific product configuration.
