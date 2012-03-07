@@ -16,5 +16,3 @@ endif
 
 PRODUCT_PROPERTY_OVERRIDES += \ 
     ro.modversion=$(CMVERSION)
-
-
