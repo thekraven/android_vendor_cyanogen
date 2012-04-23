@@ -88,7 +88,7 @@ PRODUCT_COPY_FILES += \
 #    vendor/cyanogen/prebuilt/common/etc/init.d/10apps2sd:system/etc/init.d/10apps2sd
 
 #PRODUCT_COPY_FILES +=  \
-#    vendor/cyanogen/proprietary/RomManager.apk:system/app/RomManager.apk \
+    vendor/cyanogen/proprietary/RomManager.apk:system/app/RomManager.apk \
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
@@ -127,4 +127,13 @@ endif
 
 # Required, keyboard
 PRODUCT_PACKAGES += LatinIME
+
+#### Goo Manager support
+## If EOS_RELEASE is not defined by the user, assume the build is a nightly release.
+## If EOS_RELEASE is defined, use the environment variable EOS_RELEASE_GOOBUILD as the build number.
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.goo.developerid=thekraven \
+		ro.goo.rom=IHO-Kraven-LS670 \
+		ro.goo.version=5
+
 
